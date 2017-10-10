@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/mbg">
+
+    <ListView
+        android:id="@+id/notifylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mtext1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+    </ListView>
+
+   
+
+    <TextView
+        android:id="@+id/mt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imglc"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/imglc"
+        android:text="Update Location"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colour_black" />
+
+    <ImageView
+        android:id="@+id/imglc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/notifylist"
+        android:layout_marginTop="100dp"
+        android:src="@android:drawable/ic_menu_mylocation" />
+
+    <Button
+        android:id="@+id/btprofileupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imglc"
+        android:layout_centerHorizontal="true"
+        android:background="@color/btn_colour"
+        android:padding="10dp"
+        android:text="Profile Update"
+        android:textColor="@color/colour_black" />
+
+    <TextView
+        android:id="@+id/mtext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notifylist"
+        android:layout_below="@+id/btprofileupdate"
+        android:layout_marginTop="17dp"
+        android:text="Transportation Request"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff0000"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
